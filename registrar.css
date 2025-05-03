@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(148, 196, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 500px; /* Limitar el ancho del contenedor */
+}
+
+.card {
+    background-color: #fff; /* Fondo blanco para el contenedor */
+    padding: 20px; /* Añadir espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    animation: glow 2s infinite; /* Animación de iluminación */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.card-header, .card-footer {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+}
+
+h1, h2, b {
+    text-align: center;
+    color: #333; /* Color del texto */
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px; /* Margen inferior añadido */
+}
+
+.form-group input {
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra interna */
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Color de fondo personalizado */
+    border: none; /* Sin borde */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave para el fondo */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+    transform: scale(1.05); /* Escala al pasar el ratón */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Color de fondo personalizado */
+    border: none; /* Sin borde */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave para el fondo */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Color de fondo al pasar el ratón */
+    transform: scale(1.05); /* Escala al pasar el ratón */
+}
+
+.btn-link {
+    color: #007bff; /* Color del enlace */
+    transition: color 0.3s; /* Transición suave para el color */
+}
+
+.btn-link:hover {
+    color: #0056b3; /* Color del enlace al pasar el ratón */
+    text-decoration: none; /* Sin subrayado al pasar el ratón */
+}
+
+.text-center {
+    margin-top: 10px;
+}

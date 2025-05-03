@@ -1,0 +1,60 @@
+
+body {
+    background-color: rgb(148, 196, 211);
+}
+
+.container {
+    margin-top: 50px;
+    max-width: 500px; /* Limitar el ancho del contenedor */
+    background-color: #fff; /* Fondo blanco para el contenedor */
+    padding: 20px; /* Añadir espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    position: relative; /* Necesario para el pseudoelemento */
+    animation: glow 2s infinite; /* Animación de iluminación */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+h1, h2, b {
+    text-align: center;
+    color: #333; /* Color del texto */
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px; /* Margen inferior añadido */
+}
+
+.form-group input {
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Color de fondo personalizado */
+    border: none; /* Sin borde */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+
+.text-center strong a {
+    color: #007bff; /* Color del enlace */
+    transition: color 0.3s; /* Transición suave para el color */
+}
+
+.text-center strong a:hover {
+    color: #0056b3; /* Color del enlace al pasar el ratón */
+}

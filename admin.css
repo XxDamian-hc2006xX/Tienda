@@ -1,0 +1,17 @@
+/* Estilo adicional para los botones en la barra de navegación */
+.nav-btn .nav-link {
+    margin-right: 10px; /* Espacio entre botones */
+}
+
+
+/* Estilo para el pie de página */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
